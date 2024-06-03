@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Store</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.csst"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+
+  <body>
+    <!-------header>-->
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="#" class="logo">Titans Gym<span>.</span></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <i class="bx bx-cart"></i>
+          <i class="bx bx-menu" class="menu-icon" onclick="menutoggle()"></i>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <h1>Fitness Collection</h1>
+            <p>
+              Your one-stop shop for premium workout gear<br />
+              Elevate your fitness game with our top-notch accessories.
+            </p>
+            <a href="" class="btn">Shop Now &#8594;</a>
+          </div>
+          <div class="col-2">
+            <img src="images/u.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------Products---->
+    <div class="small-container">
+      <h2 class="title">Our Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="images/8.jpg" />
+          <h4>Gym Mats</h4>
+          <p>
+            Whether you’re practicing yoga or pilates or just need to get in a
+            few floor core exercises, mats are an essential piece to working out
+            at home.
+          </p>
+          <a href="" class="btn">Shop Now</a>
+        </div>
+        <div class="col-4">
+          <img src="images/l.jpg" />
+          <h4>Fitness Resistance Band</h4>
+          <p>
+            Latex Elastic Bands For Home Or Gym Upper & Lower Body Exercise,
+            Physical Therapy, Strength Training, Yoga, Pilates, Rehab, Blue &
+            Purple & Pink
+          </p>
+          <a href="" class="btn">Shop Now</a>
+        </div>
+        <div class="col-4">
+          <img src="images/b.jpg" />
+          <h4>Kettle bells</h4>
+          <p>
+            The Best Home Workout Equipment for Every Type of Exerciser.
+            High-tech treadmills, space-saving dumbbells, and more gear that
+            brings the gym to you.
+          </p>
+          <a href="" class="btn">Shop Now</a>
+        </div>
+        <div class="col-4">
+          <img src="images/r.jpg" />
+          <h4>Dumbells</h4>
+          <p>
+            Coretez Luxury Dumbbells Set. Built to order, customisable and aimed
+            for those who truly value a refined handmade product.
+          </p>
+          <a href="" class="btn">Shop Now</a>
+        </div>
+      </div>
+    </div>
+    <!-----Footer Section-->
+    <footer>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Titans Gym. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "Opx";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
